@@ -1,0 +1,15 @@
+* C:\users\mostlyk\Documents\LTspiceXVII\EW-2\Pre-Gain\initial-1-0-1.asc
+R1 N005 P001 2k
+V1 N004 0 SINE(0 40mV 3k)
+Q1 N002 N004 N005 0 BC547B
+Q2 N003 0 N005 0 BC547B
+R2 N001 N002 1k
+R3 N001 N003 1k
+V2 N001 0 1.8V
+V3 P001 0 -1.8V
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\mostlyk\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 10ms
+.backanno
+.end
